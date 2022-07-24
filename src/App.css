@@ -1,0 +1,127 @@
+* {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(225, 210, 243), rgb(247, 242, 253));
+}
+
+.App {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  margin: 5rem auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert {
+  padding: 5px 1rem;
+  border-radius:10px ;
+  font-size: 0.8rem;
+}
+
+.header--title {
+  color: rgb(13, 0, 29);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.grocery--form {
+  width: 25rem;
+  display: flex;
+}
+
+.grocery--input {
+  font: inherit;
+  width: 20rem;
+  padding: 5px;
+  text-indent: 5px;
+  border: none;
+  background-color: aliceblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.grocery--input:focus {
+  outline-color:  rgb(225, 210, 243);
+}
+
+.submit--btn {
+  border: none;
+  background-color: rgb(217, 192, 248);
+  font: inherit;
+  width: 5rem;
+  transition: all 0.3s ease-in;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.submit--btn:hover {
+  background-color: rgb(201, 163, 248);
+  color: white;
+}
+
+.list--container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-top: 2rem;
+  list-style: none;
+  width: 25rem;
+}
+
+.grocery--list {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 5px 0.6rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grocery--list:hover {
+  background-color: rgba(236, 226, 248, 0.5);
+}
+
+.grocery--list div {
+  display: flex;
+}
+
+.btn {
+  font: inherit;
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit--btn {
+  color: rgb(109, 236, 109);
+}
+
+.edit--btn:hover {
+  color: rgb(87, 189, 87);
+}
+
+.delete--btn {
+  color: rgb(250, 125, 125);
+}
+
+.delete--btn:hover {
+  color: rgb(204, 101, 101);
+}
+
+.clearAll--btn {
+  color: red;
+}
